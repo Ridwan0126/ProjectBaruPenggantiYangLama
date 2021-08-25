@@ -20,37 +20,53 @@ class ChatsTab extends Component {
 
   renderItem = ({item}) => {
     return (
-      <ListItem
-        onPress={() =>
-          this.props.navigation.navigate('ChatView', {
-            name: item.name,
-            image: item.image,
-            message: item.message,
-          })
-        }>
-        <Image source={{uri: item.image}} style={styles.pic} />
-        <ListItem.Content>
-          <ListItem.Title>
-            <View style={styles.nameContainer}>
-              <Text style={styles.nameTxt}>{item.name}</Text>
-              <Text style={styles.time}>{item.time}</Text>
-            </View>
-          </ListItem.Title>
-          <ListItem.Subtitle>
-            <View style={styles.msgContainer}>
-              {item.messageType === 'Photo' ? (
-                <Icon
-                  name={item.icon}
-                  size={15}
-                  color="#b3b3b3"
-                  style={{marginRight: 5}}
-                />
-              ) : null}
-              <Text style={styles.msgTxt}>{item.message}</Text>
-            </View>
-          </ListItem.Subtitle>
-        </ListItem.Content>
-      </ListItem>
+      <View>
+        <ListItem
+          onPress={() =>
+            this.props.navigation.navigate('ChatView', {
+              name: item.name,
+              image: item.image,
+              message: item.message,
+            })
+          }>
+          <Image source={{uri: item.image}} style={styles.pic} />
+          <ListItem.Content>
+            <ListItem.Title>
+              <View style={{flexDirection: 'row'}}>
+                <View style={styles.nameContainer}>
+                  <Text style={styles.nameTxt}>{item.name}</Text>
+                </View>
+              </View>
+            </ListItem.Title>
+            <ListItem.Subtitle>
+              <View style={styles.msgContainer}>
+                {item.messageType === 'Photo' ? (
+                  <Icon
+                    name={item.icon}
+                    size={15}
+                    color="#b3b3b3"
+                    style={{marginRight: 5}}
+                  />
+                ) : null}
+                <Text style={styles.msgTxt}>{item.message}</Text>
+              </View>
+            </ListItem.Subtitle>
+          </ListItem.Content>
+          <View style={{alignItems: 'center'}}>
+            <Text style={styles.time}>{item.time}</Text>
+            <Text
+              style={{
+                backgroundColor: '#00e600',
+                padding: 8,
+                // margin: 10,
+                borderRadius: 100,
+                color: 'white',
+              }}>
+              1
+            </Text>
+          </View>
+        </ListItem>
+      </View>
     );
   };
 
@@ -65,7 +81,7 @@ class ChatsTab extends Component {
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('ContactView')}
           style={styles.newChatButton}>
-          <Icon name="chat" color="#fff" size={30} style={{padding: 5}} />
+          <Icon name="chat" color="#fff" size={25} style={{padding: 5}} />
         </TouchableOpacity>
       </View>
     );
