@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import {connect} from 'react-redux';
 import {InputApp, ButtonApp, AuthHeader} from '../../components';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 
 class Register extends Component {
   constructor(props) {

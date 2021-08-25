@@ -10,17 +10,19 @@ const initialState = {
     {
       name: 'user',
       username: 'user1@gmail.com',
-      password: 'user1',
-      role: 'user1',
+      password: 'pass1#',
       image:
         'https://ichef.bbci.co.uk/news/507/cpsprodpb/AA0E/production/_119543534_animedua.jpg',
+      role: 'user1',
+      phone: '+628512312344',
     },
     {
       name: 'user',
       username: 'user2@gmail.com',
-      password: 'user2',
-      role: 'user2',
+      password: 'users2#',
       image: 'https://wayang.files.wordpress.com/2010/03/ramayana.jpg',
+      role: 'user2',
+      phone: '+628996712312',
     },
   ],
 };

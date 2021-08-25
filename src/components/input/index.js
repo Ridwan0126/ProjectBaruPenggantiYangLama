@@ -3,7 +3,7 @@ import {TouchableOpacity, View} from 'react-native';
 import {Input} from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 
 class InputApp extends Component {
   constructor(props) {

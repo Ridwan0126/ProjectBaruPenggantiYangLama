@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity} from 'react-native';
 
 import {Input} from 'react-native-elements';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 
 class inputEdit extends Component {
   constructor(props) {

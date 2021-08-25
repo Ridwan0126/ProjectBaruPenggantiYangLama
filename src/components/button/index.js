@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 import {Text, View, TouchableHighlight, StyleSheet} from 'react-native';
 
 class ButtonApp extends Component {

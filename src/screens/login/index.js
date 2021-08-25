@@ -12,7 +12,7 @@ import {
 import {connect} from 'react-redux';
 import {signIn} from '../../../actions/auth';
 import {InputApp, ButtonApp, AuthHeader} from '../../components';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 import {SocialIcon} from 'react-native-elements';
 import {SQLiteContext} from '../../../config/sqlite';
 

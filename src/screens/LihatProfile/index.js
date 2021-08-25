@@ -10,7 +10,7 @@ import {
   Dimensions,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 import {connect} from 'react-redux';
 import {editUser, signIn} from '../../../actions/auth';
 import {Input} from 'react-native-elements';

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {signOut} from '../../../actions/auth';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 import {
   View,
   Text,

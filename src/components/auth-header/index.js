@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import * as Animatable from 'react-native-animatable';
-import {COLOR} from '../../../constant/color';
+import {COLOR} from '../../../color';
 import {
   View,
   Text,
